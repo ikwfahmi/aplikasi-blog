@@ -38,7 +38,6 @@ Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini di komputer lokal A
 Pastikan komputer Anda sudah terinstal:
 - PHP (minimal versi 8.2)
 - Composer
-- Node.js & npm
 - Database server (MySQL/MariaDB, seperti XAMPP atau Laragon)
 
 ### 2. Kloning Repositori
@@ -48,11 +47,10 @@ git clone <url-repositori-anda>
 cd aplikasi-blog
 ```
 
-### 3. Instalasi Dependency PHP & Frontend
+### 3. Instalasi Dependency PHP
 Jalankan perintah berikut untuk menginstal package yang diperlukan:
 ```bash
 composer install
-npm install
 ```
 
 ### 4. Konfigurasi Environment File
@@ -92,17 +90,10 @@ Lakukan link folder storage agar gambar artikel yang diunggah dapat diakses seca
 php artisan storage:link
 ```
 
-### 8. Jalankan Server Lokal & Build Asset
-Jalankan server lokal Laravel dan compiler Vite untuk compile Tailwind CSS:
-
-*Terminal 1 - Jalankan Server Laravel:*
+### 8. Jalankan Server Lokal
+Jalankan server lokal Laravel:
 ```bash
 php artisan serve
-```
-
-*Terminal 2 - Jalankan Vite Development Server:*
-```bash
-npm run dev
 ```
 
 Aplikasi sekarang dapat diakses melalui browser Anda di alamat: [http://127.0.0.1:8000](http://127.0.0.1:8000)
